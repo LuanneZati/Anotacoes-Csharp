@@ -254,3 +254,11 @@ static void Main(string[] args)
 ```cs
 ...It's not ready yet
 ```
+
+### **8. Eventos**
+
+Way to exchange informations between objects.  
+3 steps:  
+    1. Create a delegate  
+    2. Create a public event  
+    3. Create a method inside the class
