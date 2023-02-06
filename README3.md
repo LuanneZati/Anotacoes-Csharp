@@ -320,3 +320,61 @@ namespace Tasks
     }
 }
 ```  
+
+### **5. System Timers**
+
+```cs
+using System.Timers;
+
+namespace SystemTimers
+{
+    internal class Program
+    {
+        static void TimerTick(object sender, EventArgs e)
+        {
+            Console.WriteLine(DateTime.Now.ToString("hh:mm:ss"));
+        }
+        static void Main(string[] args)
+        {
+            //Creating timer
+            Timer timer = new Timer(1000);
+            timer.autoReset = true;
+            timer.Elapsed += TimerTick;
+
+            timer.start();
+
+            Console.WriteLine("Press any key..");
+            Console.ReadKey();
+
+            timer.stop();
+        }
+    }
+}
+```
+
+### **6. System Threading Timer**
+
+```cs
+using System.Threading;
+
+namespace SystemTimers
+{
+    internal class Program
+    {
+        static void TimerTick(object state)
+        {
+            Console.WriteLine(DateTime.Now.ToString("hh:mm:ss"));
+        }
+        static void Main(string[] args)
+        {
+            //Creating timer
+            TimerCallback timer = new TimerCallback(TimerTick);
+            Timer myTimer = new Timer(timer, null, 0, 1000); //(callback, function parameter object, lag time, time to execute )
+
+            Console.WriteLine("Press any key..");
+            Console.ReadKey();
+
+            myTimer.Dispose();
+        }
+    }
+}
