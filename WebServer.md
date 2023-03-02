@@ -25,3 +25,7 @@ São identificados através de um endereço IP e uma porta.
 TCP = garantia da mensagem;  
 UDP = não garante o recebimento da mensagem;  
 
+### **4. Serviços windows**
+
+Executáveis em console, e o próprio windows inicializa o serviço.
+
