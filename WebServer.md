@@ -1,4 +1,4 @@
-## Curso C# Udemy - WebServers
+## Curso C# Udemy - WebServers e API's
 
 ### **1. Endereço IP**
 
@@ -29,3 +29,20 @@ UDP = não garante o recebimento da mensagem;
 
 Executáveis em console, e o próprio windows inicializa o serviço.
 
+### **5. Model View Controller(MVC)**
+
+Model = definição dos dados;  
+
+![Model](Imagens/model.PNG)
+
+View = representação dos dados (UX/UI);  
+
+![Model](Imagens/view.PNG)  
+
+Controller = o funcionamento da aplicação;  
+
+![Model](Imagens/controller.PNG)  
+
+### **6. Web API Estrutura**
+
+![Model](Imagens/estruturaAPI.PNG)  
